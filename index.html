@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halazeen - Turn Your Dreams into Income</title>
-     <link rel="icon" type="image/png" href="logo.png">
+    <title>Halazeen - Learn Launch Lead</title>
+     <link rel="icon" type="image/x-icon" href="logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -211,19 +211,37 @@
         }
 
         /* Hero Section */
-        #hero {
-            padding: 180px 0 100px;
-            background: linear-gradient(135deg, var(--primary-light), var(--secondary-light));
-            position: relative;
-            overflow: hidden;
-        }
+       #hero {
+    padding: 180px 0 100px;
+    position: relative;
+    overflow: hidden;
+    background: url('https://www.economistjurist.es/wp-content/uploads/sites/2/2021/01/ETE.jpg') no-repeat center center/cover;
+    z-index: 1;
+}
 
-        .hero-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
+/* Overlay */
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.495); /* Dark overlay */
+    z-index: 2;
+}
+
+/* Ensure hero content is above overlay */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 
         .hero-text {
             flex: 1;
@@ -234,7 +252,7 @@
 
         .hero-text h1 {
   font-size: 2.5rem;
-  background: linear-gradient(to left,#2e7d32, #4caf50); /* any gradient */
+    background: linear-gradient(to right, var(--primary), var(--primary-dark));
   /* Clip the gradient to the text */
   -webkit-background-clip: text;
   background-clip: text;
@@ -247,7 +265,7 @@
         .hero-text p {
             font-size: 1.1rem;
             margin-bottom: 30px;
-            color: var(--text-dark);
+            color: white;
             opacity: 0.9;
         }
 
@@ -1026,7 +1044,7 @@ Start Building a Path Towards your Dream — Effortlessly!
 Unlock powerful income streams with simple, smart methods designed for students, homemakers, and go-getters. Create lasting earnings from home with ease — your journey to financial freedom begins here.</p>
                 <div class="hero-btns">
                     <a href="#course-packages" class="btn btn-primary">Join Intro session at only <span style="font-family: Arial, Helvetica, sans-serif;">₹</span>29/-</a>
-                    <a href="#what-you-learn" class="btn btn-secondary">Learn More</a>
+                    <a href="#course-packages" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -1045,7 +1063,7 @@ Unlock powerful income streams with simple, smart methods designed for students,
                         <i class="fas fa-rupee-sign"></i>
                     </div>
                     <h3>Affordable Pricing</h3>
-                    <p>Get instant access to our ₹29 intro and unlock the full earning course for only ₹399.</p>
+                    <p>Get instant access to our <span style="font-family: Arial, Helvetica, sans-serif;">₹</span>29 intro and unlock the full earning course for only <span style="font-family: Arial, Helvetica, sans-serif;">₹</span>399.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
@@ -1270,14 +1288,14 @@ Unlock powerful income streams with simple, smart methods designed for students,
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <h3>Introductory Class</h3>
-                    <p>A powerful ₹29 preview of how online earning really works, giving you the foundation to start your journey.</p>
+                    <p>Affordable, practical, and made for everyone ready to grow financially from home.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-certificate"></i>
                     </div>
                     <h3>Full Course</h3>
-                    <p>Comprehensive ₹399 training with step-by-step guidance to launch your digital product business.</p>
+                    <p>Comprehensive training with step-by-step guidance to launch your digital product business.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
